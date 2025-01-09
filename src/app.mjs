@@ -25,4 +25,9 @@ app.listen(port, () => {
     console.log(`Example app listening on port http://localhost:${port}`);
 });
 
-
+// Si aucune route ne correspondant à l'URL demandée par le consommateur
+app.use(({ res }) => {
+    const message =
+        "Impossible de trouver la ressource demandée ! Vous pouvez essayer une autre URL.";
+    res.status(404).json(message);
+});
