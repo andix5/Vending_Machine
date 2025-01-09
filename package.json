@@ -10,7 +10,9 @@
   "author": "Anderson Mendes",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.12.0",
+    "sequelize": "^6.37.5"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
