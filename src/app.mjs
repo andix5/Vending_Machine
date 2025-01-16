@@ -1,4 +1,4 @@
-import { sequelize } from "../db/sequelize.mjs";
+import {Product, sequelize} from "../db/sequelize.mjs";
 import {initDb} from "../db/sequelize.mjs";
 sequelize
     .authenticate()
@@ -31,3 +31,6 @@ app.use(({ res }) => {
         "Impossible de trouver la ressource demandée ! Vous pouvez essayer une autre URL.";
     res.status(404).json(message);
 });
+
+
+
